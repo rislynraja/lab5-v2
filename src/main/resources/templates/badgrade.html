@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Results Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>You got a bad grade.</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Sad-face.png" alt="sadface">
+    <h1>Your Grade:</h1>
+    <p th:text="'Your grade is: ' + ${grade}"></p>
+    <a href="/greeting">Retake quiz</a>
+</body>
+</html>
